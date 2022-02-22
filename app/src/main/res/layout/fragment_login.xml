@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginFragment"
+    android:background="@drawable/backone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:layout_marginRight="@dimen/sixteen"
+            android:layout_marginBottom="@dimen/thirtyFive"
+            app:cardCornerRadius="@dimen/fifteen"
+            app:cardElevation="@dimen/twenty"
+            app:cardBackgroundColor="@color/color1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/eight"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/sixteen"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="@dimen/oneSeventy"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/customer" />
+
+                <EditText
+                    android:id="@+id/editTextEmailS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight"
+                    android:layout_marginRight="@dimen/eight"
+                    android:ems="10"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/editTextPasswordS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/eight"
+                    android:layout_marginRight="@dimen/eight"
+                    android:ems="10"
+                    android:hint="@string/pass"
+                    android:inputType="textPassword" />
+
+                <TextView
+                    android:id="@+id/forgotPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/five"
+                    android:layout_gravity="end"
+                    android:textColor="@color/green1"
+                    android:text="@string/forgotPass" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/signInButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/fourty"
+            android:layout_marginRight="@dimen/fourty"
+            android:gravity="center"
+            android:text="@string/signIn"
+            app:icon="@drawable/signin"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/registerPageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/fourty"
+            android:layout_marginTop="@dimen/fifteen"
+            android:layout_marginRight="@dimen/fourty"
+            android:layout_marginBottom="@dimen/fifty"
+            android:gravity="center"
+            android:text="@string/registerAs"
+            app:icon="@drawable/adduser"
+            app:iconGravity="textStart" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
