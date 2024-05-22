@@ -1,1 +1,1 @@
-Pariksha | Competition hosting Application
+Pariksha - A Competition hosting Application
