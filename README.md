@@ -1,1 +1,1 @@
-Pariksha | Parikक्षा - Competition hosting Application 📱
+Pariksha - Competition hosting Application
